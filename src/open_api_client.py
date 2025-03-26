@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 
 # Load the .env file only once
-dotenv_path = os.path.join(os.path.dirname(__file__), '.env') #os.path... = allows you to join two paths 1)directory location of current file, then will do /env; passing in env; joining the name of the file
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env') #os.path... = allows you to join two paths 1)directory location of current file, then will do /env; passing in env; joining the name of the file
 load_dotenv(dotenv_path=dotenv_path)#loads the dotenv makes the environment variables defined in .evn; makes available to current python process
 
 # Initialize the client only once

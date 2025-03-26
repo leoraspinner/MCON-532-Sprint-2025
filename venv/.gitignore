@@ -1,2 +1,7 @@
-# created by virtualenv automatically
-*.env
+**/*.pyc
+.idea/
+**/*.iml
+./venv/
+.env.local
+**.env
+*/.env
