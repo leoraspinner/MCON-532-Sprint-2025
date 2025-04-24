@@ -1,6 +1,6 @@
 import unittest
 
-from group_anagram import group_anagrams
+from Demos.Module2.group_anagram import group_anagrams
 
 
 class TestGroupAnagram(unittest.TestCase):

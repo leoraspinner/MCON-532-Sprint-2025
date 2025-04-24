@@ -1,8 +1,9 @@
 requests
 openai
 python-dotenv
-
-requests
 django
-python-dotenv
 djangorestframework
+psycopg2-binary
+numpy
+pandas
+scikit-learn
