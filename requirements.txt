@@ -1,3 +1,8 @@
 requests
 openai
 python-dotenv
+
+requests
+django
+python-dotenv
+djangorestframework
