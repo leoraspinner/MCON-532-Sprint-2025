@@ -12,7 +12,9 @@ _client_instance = None
 def get_openai_client():
     global _client_instance
     if _client_instance is None:
-        api_key = os.getenv("OPENAI_API_KEY")
+        api_key = os.getenv("OPENAI_API_KEY").strip()
         org_id = os.getenv("OPENAI_ORG_ID").strip()
         _client_instance = OpenAI(api_key=api_key, organization=org_id)
     return _client_instance
+
+

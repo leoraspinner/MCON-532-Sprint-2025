@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 
 client = get_openai_client()
+
 # Define text inputs
 text_1 = "What is Retrieval-Augmented Generation?"
 text_2 = "How do you use external data with language models?"
@@ -39,7 +40,7 @@ for title, emb in embedding_store.items():
     score = calculate_cosine_similarity(query_embedding, emb)
     print(f"Similarity with '{title}': {score:.4f}")
 
-# Create a DataFrame from embeddings
+# Created a DataFrame from embeddings
 documents = pd.DataFrame({
     "title": list(embedding_store.keys()),
     "embedding": [np.array(r.data[0].embedding) for r in embedding_store.values()]
